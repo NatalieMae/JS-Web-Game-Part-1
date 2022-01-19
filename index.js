@@ -37,11 +37,14 @@ document.body.append(assets)
  }
 
  newItem("assets/sword.png", 500, 405);
+ newItem("assets/sheild.png", 165, 185);
+ newItem("assets/staff.png", 600, 100);
 
- game.addEventListener('click', function(){
+ game.addEventListener("click", function(){
      game.remove()
  })
- 
+ //unable to get the darn thing to work! :) I believe I am using the wrong element, but newItem didn't work in the 
+ //event listener when I tried so I am not sure what else I can use. 
 
 
 // let newImage = document.createElement('img')
