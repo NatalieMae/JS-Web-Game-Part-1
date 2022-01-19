@@ -20,7 +20,28 @@ assets.style.bottom = bottom + 'px'
 document.body.append(assets)
 }
 
- newImage("assets/green-character.gif", 100, 100)
+ newImage("assets/green-character.gif", 100, 100);
+ newImage("assets/pine-tree.png", 450, 200);
+ newImage("assets/tree.png", 200, 300);
+ newImage("assets/pillar.png", 350, 100);
+ newImage("assets/crate.png", 150, 200);
+ newImage("assets/well.png", 500, 425);
+
+ function newItem (url, left, bottom) {
+    let game = document.createElement('img')
+ game.src = url
+ game.style.position = 'fixed'
+ game.style.left = left +  'px'
+ game.style.bottom = bottom + 'px'
+ document.body.append(game)
+ }
+
+ newItem("assets/sword.png", 500, 405);
+
+ game.addEventListener('click', function(){
+     game.remove()
+ })
+ 
 
 
 // let newImage = document.createElement('img')
