@@ -20,29 +20,29 @@ assets.style.bottom = bottom + 'px'
 document.body.append(assets)
 }
 
- newImage("assets/green-character.gif", 100, 100);
- newImage("assets/pine-tree.png", 450, 200);
- newImage("assets/tree.png", 200, 300);
- newImage("assets/pillar.png", 350, 100);
- newImage("assets/crate.png", 150, 200);
- newImage("assets/well.png", 500, 425);
+ newImage("assets/green-character.gif", 100, 100)
+ newImage("assets/pine-tree.png", 450, 200)
+ newImage("assets/tree.png", 200, 300)
+ newImage("assets/pillar.png", 350, 100)
+ newImage("assets/crate.png", 150, 200)
+ newImage("assets/well.png", 500, 425)
 
  function newItem (url, left, bottom) {
-    let game = document.createElement('img')
- game.src = url
- game.style.position = 'fixed'
- game.style.left = left +  'px'
- game.style.bottom = bottom + 'px'
- document.body.append(game)
+    let item = document.createElement('img')
+ item.src = url
+ item.style.position = 'fixed'
+ item.style.left = left +  'px'
+ item.style.bottom = bottom + 'px'
+ document.body.append(item)
  }
 
- newItem("assets/sword.png", 500, 405);
- newItem("assets/sheild.png", 165, 185);
- newItem("assets/staff.png", 600, 100);
+ newItem("assets/sword.png", 500, 405)
+ newItem("assets/sheild.png", 165, 185)
+ newItem("assets/staff.png", 600, 100)
 
- game.addEventListener("click", function(){
-     game.remove()
- })
+item.addEventListener('click', function() {
+        remove.item()
+    })
  //unable to get the darn thing to work! :) I believe I am using the wrong element, but newItem didn't work in the 
  //event listener when I tried so I am not sure what else I can use. 
 
